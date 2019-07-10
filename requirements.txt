@@ -2,3 +2,4 @@ discord==0.16.12
 asyncio
 requests
 beautifulsoup4
+lxml
