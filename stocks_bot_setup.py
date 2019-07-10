@@ -21,7 +21,12 @@ points_enabled = True
 points_filename = "points.txt"
 admin_role_ids = str(os.environ.get("ADMIN_ROLE_IDS"))
 points_role_ids = {
-    0: ""
+    10: "598362352076718102",
+    25: "598364202377412619",
+    50: "598364552299544576",
+    100: "598364658331549696",
+    150: "598364823343857686",
+    200: "593972583473348608"
 }
 
 
