@@ -19,7 +19,7 @@ welcome_message = str(os.environ.get("WELCOME_MESSAGE"))
 
 points_enabled = True
 points_filename = "points.txt"
-admin_role_ids = os.environ.get("ADMIN_ROLE_IDS")
+admin_role_ids = [str(os.environ.get("ADMIN_ROLE_ID_ONE")), str(os.environ.get("ADMIN_ROLE_ID_TWO"))]
 points_role_ids = {
     10: "598362352076718102",
     25: "598364202377412619",
