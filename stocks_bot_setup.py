@@ -34,6 +34,10 @@ points_role_ids = {
 invisible_char = "‌‌ "
 self_id = str(os.environ.get("SELF_ID"))
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"}
+proxies = { 
+  "http"  : "http://96.80.89.69:8080", 
+  "https" : "https://98.172.142.99:8080"
+}
 points_dict = {
 "330813369898762240": 2, 
 "393228932821811210": 11, 
@@ -128,7 +132,7 @@ async def on_message(message_object):
 
             link = f"https://www.nasdaq.com/es/symbol/{stock_quote}/real-time"
 
-            response = requests.get(link, headers=headers)
+            response = requests.get(link, headers=headers, proxies=proxies)
             print(response.status_code)
             if not response.status_code in [204, 200]:
                 return False
@@ -168,7 +172,7 @@ async def on_message(message_object):
 
             link = f"https://stockcharts.com/h-sc/ui?s={stock_quote}"
 
-            response = requests.get(link, headers=headers)
+            response = requests.get(link, headers=headers, proxies=proxies)
             if not response.status_code in [204, 200]:
                 return False
             soup = BeautifulSoup(response.text, features="lxml")
