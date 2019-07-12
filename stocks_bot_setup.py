@@ -128,7 +128,7 @@ async def on_message(message_object):
 
             link = f"https://www.nasdaq.com/es/symbol/{stock_quote}/real-time"
 
-            response = requests.get(link)
+            response = requests.get(link, headers=headers)
             print(response.status_code)
             if not response.status_code in [204, 200]:
                 return False
