@@ -35,8 +35,8 @@ invisible_char = "‌‌ "
 self_id = str(os.environ.get("SELF_ID"))
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"}
 proxies = { 
-  "http"  : "http://96.80.89.69:8080", 
-  "https" : "https://98.172.142.99:8080"
+  "http"  : "http://138.68.240.218:8080", 
+  #"https" : "https://98.172.142.99:8080"
 }
 points_dict = {
 "330813369898762240": 2, 
