@@ -34,7 +34,15 @@ points_role_ids = {
 invisible_char = "‌‌ "
 self_id = str(os.environ.get("SELF_ID"))
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"}
-points_dict = {}
+points_dict = {
+"330813369898762240": 2, 
+"393228932821811210": 11, 
+"575977876978139148": 2,
+"438676155894333440": 4, 
+"597849195688362014": 1, 
+"565593383364460555": 3, 
+"520358867733970983": 1
+}
 
 
 
