@@ -271,7 +271,8 @@ __**Admin Commands**__
                             role_object = role
 
                     await bot.add_roles(member_object, role_object)
-
+                    
+        del command_args
 
 
 
